@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Fantasy Battle</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .padded {
+            margin-top: 50px;
+        }
+
+        .selected {
+            border: 3px dotted hotpink;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-50">
+        <div class="row padded">
+            <div class="col">
+                <h1>Fantasy Battle</h1>
+            </div>
+        </div>
+
+        <div class="row padded characters">
+            <div class="col">
+                <h2 class="archer">Archer</h2>
+            </div>
+            <div class="col">
+                <h2 class="mage">Mage</h2>
+            </div>
+            <div class="col">
+                <h2 class="rogue">Rogue</h2>
+            </div>
+        </div>
+
+        <div class="row align-items-end characters">
+            <div class="col archer">
+                <img src="img/archer.PNG" id="archer" height="85" width="94"/>
+            </div>
+            <div class="col mage">
+                <img src="img/mage.PNG" id="mage" height="111" width="87"/>
+            </div>
+            <div class="col rogue">
+                <img src="img/rogue.PNG" id="rogue" height="102" width="82"/>
+            </div>
+        </div>
+
+        <div class="row padded items">
+            <div class="col">
+                <h2 class="ring">Ring</h2>
+            </div>
+            <div class="col">
+                <h2 class="charm">Charm (Mage Only)</h2>
+            </div>
+        </div>
+
+        <div class="row align-items-end items">
+            <div class="col ring">
+                <img src="img/ring.PNG" id="ring" height="70" width="69"/>
+            </div>
+            <div class="col charm">
+                <img src="img/charm.PNG" id="charm" height="80" width="75"/>
+            </div>
+        </div>
+
+        <div class="row padded">
+            <div class="col">
+                <button class="btn btn-primary">BATTLE</button>
+            </div>
+        </div>
+
+        <div class="row padded">
+            <div class="col">
+                <h2 id="result"></h2>
+            </div>
+        </div>
+        <div class="row padded">
+            <div class="col">
+                <h2 id="opponent"></h2>
+            </div>
+        </div>
+
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="battle.js"></script>
+</body>
+</html>
