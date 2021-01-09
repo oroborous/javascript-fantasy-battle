@@ -1,5 +1,5 @@
-var selectedCharacter;
-var selectedItem;
+let selectedCharacter;
+let selectedItem;
 
 $(document).ready(function () {
     $(".characters img").click(chooseCharacter);
@@ -43,11 +43,11 @@ $(document).ready(function () {
             }
         }
 
-        var dodgeChance = 0.50;
-        var opponentRoll = Math.random();
+        let dodgeChance = 0.50;
+        let opponentRoll = Math.random();
         console.log(`Opponent rolled ${opponentRoll}`);
 
-        // var opponentAction;
+        // let opponentAction;
         // if (opponentRoll < dodgeChance) {
         //     opponentAction = "dodges";
         // }
@@ -56,7 +56,7 @@ $(document).ready(function () {
         // }
 
         // Rewritten using conditional operator
-        var opponentAction = (opponentRoll < dodgeChance) ? "dodges" : "is hit";
+        let opponentAction = (opponentRoll < dodgeChance) ? "dodges" : "is hit";
 
         $("#opponent").text(`Your opponent ${opponentAction}`);
     }
